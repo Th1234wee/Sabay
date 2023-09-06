@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden ;
+}
+/* variable declare */
+:root{
+    --main-font:20px;
+    --main-color:#FA1939;
+    --font:16px;
+}
+/* variable declare */
+.header{
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 75%;
+    height: 80%;
+    /* background-color: red; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+}
+.box .logo{
+    width: 10%;
+    height: 100%;
+    /* background-color: green; */
+}
+.box .ads{
+    width: 70%;
+    height: 100%;
+    background-color: yellow;
+}
+.box .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .ads img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* navbar section  */
+.box-navbar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+}
+.box-navbar .navbar{
+    width: 75%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: auto;
+}
+.box-navbar .navbar ul{
+    display: flex;
+    list-style: none;
+}
+.box-navbar .navbar ul li{
+    padding: 9px 20px;
+    opacity: 0.8;
+}
+.box-navbar .navbar ul li:hover{
+    opacity: 1;
+}
+.box-navbar .navbar ul li a{
+    text-decoration: none;
+    font-family: 'Koulen';
+    font-size: var(--main-font);
+    color:#fff;
+}
+/* navbar section  */
+/* main section  */
+.main-content{
+    width: 75%;
+    height: 510px;
+    /* background-color: black; */
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main-content .content-box{
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+.main-content .content-box .box-1:nth-child(odd){
+    width: 60%;
+    height: 50%;
+    /* background-color: brown; */
+    position: relative;
+}
+.main-content .content-box .box-1:nth-child(even){
+    width: 40%;
+    height: 50%;
+    background-color: aqua;
+    position: relative;
+}
+.main-content .ads-box{
+    width: 29%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-content .content-box .box-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-content .content-box .box-1:hover .text{
+    top: 30%;
+    height: 140px;
+    transition: 0.5s;
+}
+.main-content .content-box .box-1:hover h1{
+    color: red;
+}
+.text{
+    width: 100%;
+    height: 80px;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 55%;
+    overflow: hidden;
+    padding: 10px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.text h1{
+    font-family: 'Battambang';
+    font-size: var(--main-font);
+    color: white;
+}
+.text p{
+    font-family: "Battambang";
+    color: white;
+}
+.date{
+    width: 100%;
+    height: 25px;
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 1%;
+    font-family: "Battambang";
+    padding: 0 10px;
+    color: white;
+    z-index: 1;
+    font-size: var(--font);
+}
+.box-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+}
+.label{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(248, 81, 109);
+    position: absolute;
+    top: 4%;
+    font-family: "Battambang";
+    color: white;
+    padding: 5px 25px;
+}
+.corner{
+    border-top: 41px solid transparent;
+    /* border-bottom: 30px solid green; */
+    border-left: 25px solid rgb(248, 81, 109) ;
+    /* border-right: 20px solid yellow; */
+    position: absolute;
+    top: 3.9%;
+    left: 18.6%;
+    z-index: 1;
+}
+.ads-box img{
+    width: 100%;
+    height: 49%;
+
+}
+/* main section  */
+/* video section  */
+.title{
+    width: 75%;
+    height: 70px;
+    /* background-color: red; */
+    border-bottom: 10px solid red;
+    margin:40px auto;
+    position: relative;
+
+}
+.title .box{
+    width: 12%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--main-font);
+    color: white;
+    font-family: "Koulen";
+    gap: 15px;
+}
+.corner-1{
+    border-top: 60px solid transparent;
+    /* border-bottom: 30px solid green; */
+    border-left: 25px solid red ;
+    /* border-right: 20px solid yellow; */
+    position: absolute;
+    top: 0%;
+    left: 12%;
+}
+.content-box-1{
+    width: 75%;
+    height: 700px;
+    /* background-color: red; */
+    border: 1px solid black;
+    margin: auto;
+    margin-top: -40px;
+    box-shadow:1px 5px 1px rgb(255, 249, 249);
+}
+.content-box-1 .big-box-1{
+    width: 100%;
+    height: 48%;
+    /* background-color: black; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.content-box-1 .big-box-1 .main-box{
+    width: 33%;
+    height: 100%;
+    /* background-color: black; */
+}
+.content-box-1 .big-box-1 .main-box img{
+    width: 100%;
+    height: 80%;
+    transition: 0.3s;
+}
+.content-box-1 .big-box-1 .main-box:hover img{
+    padding: 2px;
+    transition: all 0.3s;
+}
+.content-box-1 .big-box-1 .main-box h1{
+    font-size: var(--font);
+    font-family: "Koulen";
+
+}
+.content-box-1 .big-box-2{
+    width: 100%;
+    height: 48%;
+    /* background-color: red; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-box-1 .big-box-2 .left-content{
+    width: 75%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.content-box-1 .big-box-2 .left-content .small-content{
+    width: 23%;
+    height: 48%;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+.content-box-1 .big-box-2 .left-content .small-content img{
+    width: 100%;
+    height: 70%;
+    transition: 0.4s;
+}
+.content-box-1 .big-box-2 .left-content .small-content p{
+    font-family: "Battambang";
+    font-size: 12px;
+}
+.content-box-1 .big-box-2 .left-content .small-content:hover img{
+    transform: scale(0.98);
+    transition: 0.4s;
+}
+.content-box-1 .big-box-2 .right-content{
+    width: 24%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.content-box-1 .big-box-2 .right-content img{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+/* video section  */
+
+
+
+
+
+
+
+
+
+
+
